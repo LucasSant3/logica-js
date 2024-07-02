@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Exercício 01</title>
+    <title>Exercício 02</title>
     <style>
       body {
         background-color: cornflowerblue;
@@ -54,21 +54,30 @@
   </head>
   <body>
     <div class="box-nav">
-      <h1>Exercício #01</h1>
+      <h1>Exercício #02</h1>
       <p>Lógica de programação JS</p>
     </div>
     <div class="box">
-      <p>Leia o valor de um input e mostre em um alert.</p>
-      <input type="text" id="num" placeholder="Digite um valor">
+      <p>Leia valores A e B. Trocar os valores entre as duas variáveis, a variável A passa a possuir o valor da variável B e a variável B passa a possuir o valor da variável A.</p>
+      <input type="text" id="numA" placeholder="Digite um valor A">
+      <br>
+      <br>
+      <input type="text" id="numB" placeholder="Digite um valor B">
       <br>
       <br>
       <button onclick="go()">Enviar</button>
     </div>
   </body>
   <script>
-    function go(){
-      var valueInput = document.getElementById('num').value;
-      alert(valueInput);
+    function go() {
+      var a = document.getElementById('numA').value;
+      var b = document.getElementById('numB').value;
+      var c = b;
+      var b = a;
+      var a = c;
+      console.log(' Variável A: ' + a)
+      console.log(' Variável B: ' + b)
+
     }
   </script>
 </html>
